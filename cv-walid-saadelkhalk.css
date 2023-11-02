@@ -1,29 +1,14 @@
 /* Modifications générales */
 body {
     font-family: Verdana, sans-serif;
-    justify-content: center;
-    width: 900px;
-    height: 600px;
-    margin: 0 auto;
     background-color: rgb(161, 167, 199);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: initial;
-    background-attachment: absolute;
-    margin-top: 50px;
-
-
-
 }
 
 
 header {
     height: 100vh;
-    left: 0px;
-    height: 100px;
     z-index: 1;
     text-align: center;
-    position: relative;
     }
 
 
@@ -36,16 +21,12 @@ section {
 
 footer {
     text-align: center;
-    position: relative;
     width: 450px;
     height: 350px;
-    top: 3100px;
-    left: 720px;
-    bottom: 20px;
-    margin-bottom: 100px;
     background-color: rgba(186, 14, 14, 0);
     border-radius: 50px;
-
+    left: 80vh;
+    top: 285vh;
 }
 
 /*Titre*/
@@ -98,66 +79,91 @@ p{
 .cadre:hover {
     transform: scale(1.2);
     box-shadow: 10px -10px 25px 0px rgba(0, 0, 0, 0.712), -10px 10px 25px 0px rgba(0, 0, 0, 0.781);
+    background-color: rgb(235, 175, 100);
+}
+
+.cadre:after{
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(225deg, #1ab0bb00 0%, #26bd7e00 0%,#47f50200 100%);
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+    transition: all 1.5s;
+}
+
+.cadre:hover::after {
+    transform: rotate(180deg);
 }
 
 
-/*Fin de classes*/
+.liste-horizontale {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 10px;  
+  }
+  
 
 
 /* Modifications spécifiques */
 /* Cette partie comporte la section informations personnelles*/
+
+
+
 #section1 {
-    position: relative;
-    width:500px;
-    margin-top:0px;
-    margin-bottom: 150px;
-    left: 200px;
-    top: 550px;
+    left: 80vh;
+    top: -40vh;
 }
 
 
 
 /* Cette partie comporte la section objectifs professionnels*/
 #section2 {
-    position: relative;
     width: 600px;
-    height: 450px;
-    top: -80px;
-    left: 150px;
+    height: 425px;
+    left: 7vh;
+    top: 40vh;
+
 }
 
 
 
 /* Cette partie comporte la section expérience professionnelle*/
 #section3 {
-    position: relative;
-    width:600px;
-    top: -2000px;
-    left: 150px;
+    width:800px;
+    left: 60vh;
+    top: -5vh;
 }
 
 
 /* Cette partie comporte la section études et formations*/
 #section4 {
-    position: relative;
+
     width: 600px;
-    height: 450px;
-    top: -2380px;
-   right: -150px;
+    right: 7vh;
+    top: 40vh;
+    padding-bottom: 20px;
 }
 
 
 
 /* Cette partie comporte la section compétences*/
 #section5 {
-    position: relative;
-    width: 300px;
-    height: 450px;
-    top: -3300px;
-    left: 300px;
+    width: 900px;
+    height: 220px;
+    padding: 20px;
+    left: 55vh;
+    top: 130vh;
 }
 
-
+/* Cette partie comporte la section vidéo*/
+#section6 {
+    left: 20vh;
+    top: 200vh;
+    margin-top: 40vh;
+}
 /* Cette partie comporte la création du bouton*/
 button {
     border: 0;
